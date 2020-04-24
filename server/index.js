@@ -68,6 +68,7 @@ app.post('/values', async (req, res) => {
   res.send({ working: true });
 });
 
+// Start server
 app.listen(5000, (err) => {
   console.log('App is ready and listening for requests');
 });
