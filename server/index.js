@@ -28,7 +28,6 @@ pgClient
   .catch((err) => console.log(err));
 
 // Redis Client Setup
-
 const redis = require('redis');
 const redisClient = redis.createClient({
   host: keys.redisHost,
@@ -38,7 +37,6 @@ const redisClient = redis.createClient({
 const redisPublisher = redisClient.duplicate();
 
 // Express route handlers
-
 app.get('/', (req, res) => {
   res.send('Hi');
 });
